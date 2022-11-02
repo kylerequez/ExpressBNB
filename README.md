@@ -8,4 +8,4 @@ ExpressBNB is a simple web-application that highlights the CRUD functionalities 
 5. Nodemon
 6. Bootstrap
 
-This project is a deliverable of the Bayan Academy Backend 101 and is for educational purposes only.
+This project is a deliverable of the Bayan Academy Backend 101 training for beginners and is for educational purposes only.
