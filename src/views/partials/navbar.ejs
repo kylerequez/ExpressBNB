@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-xl sticky-top navbar-dark bg-dark">
+    <a class="navbar-brand" href="/">
+        <img src="https://clipart.info/images/ccovers/1499955328airbnb-2-logo-png.png" width="30" height="30" class="d-inline-block align-top" alt="" /> ExpressBNB
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-nav mr-auto">
+            <a class="nav-item nav-link" href="/">Home</a>
+            <a class="nav-item nav-link" href="/listings">Listings</a>
+            <a class="nav-item nav-link" href="# ">About</a>
+        </div>
+        <div class="navbar-nav navbar-right">
+            <% if(user == null){ %>
+                <a class="mr-2 btn btn-primary" href="/login">Login</a>
+                <a class="btn btn-success" href="/register">Sign-Up</a>
+                <% } else { %>
+                    <a class=" mr-2 btn btn-primary" href="/<%= user.username %>/listings">My Listings</a>
+                    <a class="btn btn-danger" href="/logout">Logout</a>
+                    <% } %>
+        </div>
+    </div>
+</nav>
